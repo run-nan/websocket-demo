@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>websocket demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        .row {
+            margin: 1rem
+        }
+    </style>
+  </head>
+  <body>
+    <div class='row'>发送方： 
+      <select id='sender'>
+        <option value="Bob" selected>Bob</option>
+        <option value="Alice">Alice</option>
+        <option value="Jack">Jack</option>
+      </select>
+    </div>
+    <div class='row'>接收方： 
+      <select id='receiver'>
+        <option value="Bob">Bob</option>
+        <option value="Alice" selected>Alice</option>
+        <option value="Jack">Jack</option>
+      </select>
+    </div>
+    <textarea id='msg' class='row' rows="10" cols="30"></textarea>
+    <div class='row'>
+        <button id='sendBtn'>发送</button>
+    </div>
+    <h3 class='row'>收到的消息:</h3>
+    <div id='conversation' class='row'></div>
+    <script src="/bundle.js"></script>
+  </body>
+</html>
